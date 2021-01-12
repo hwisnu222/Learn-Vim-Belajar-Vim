@@ -68,4 +68,16 @@ Mode Normal / INSERT
 ctrl+t
 ```
 
- 
+## Mengubah lebar dan tinggi screen
+
+```
+mode normal
+
+letakan kursor pada screen yang akan diubah lebar atau tingginya
+
+kemudian tekan 
+
+ctrl+arrow < > ^ 
+
+misal : ctrl+ arrow keatas = digunakkan untuk mengatur ketinggian screen
+```
