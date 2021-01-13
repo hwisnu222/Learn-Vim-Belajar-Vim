@@ -127,3 +127,7 @@ ctrl+arrow < > ^
 misal : ctrl+ arrow keatas = digunakkan untuk mengatur ketinggian screen
 ```
 
+
+
+
+❤ happy day
