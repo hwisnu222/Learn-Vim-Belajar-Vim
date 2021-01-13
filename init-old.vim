@@ -11,11 +11,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'townk/vim-autoclose'
-
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " tailwind intellisense
 Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
@@ -54,6 +50,8 @@ set expandtab
 set nobackup
 set noswapfile
 set nowrap
+set cursorline
+hi CursorLine ctermbg=235
 
 
 
@@ -103,7 +101,7 @@ colorscheme gruvbox
 " How can I close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " toggle NERDTree
-map <C-z> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
@@ -115,7 +113,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 autocmd CursorHold,CursorHoldI * call NERDTreeFocus() | call g:NERDTree.ForCurrentTab().getRoot().refresh() | call g:NERDTree.ForCurrentTab().render() | wincmd w
 
 
-" resize screen
+" split map for set width and height screen
 noremap <silent> <C-Left> :vertical resize +3<CR>
 noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :resize +3<CR>
@@ -150,7 +148,7 @@ function! OpenTerminal()
 endfunction
 nnoremap <c-t> :call OpenTerminal()<CR>
 
-" paste from system
+"register for paste from system to vim
 set termencoding=utf-8
 set encoding=utf-8
 

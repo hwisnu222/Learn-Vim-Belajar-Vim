@@ -13,19 +13,41 @@ VISUAL = v
 
 untuk melakukan perintah dibawah ini terlebih dahulu ubah kedalam mode normal.
 dan setiap perintah menggunakan tanda titik sama dengan pada awal perintah
-
+  
 ```
 :q = untuk keluar dari vim
-
+  
 :q! = digunakkan untuk keluar dari kode editor tanpa menyimpan perubahan pada file
-
+   
 :w = untuk menyimpan perubahan file
-
+   
 :wq untuk menyimpan perubahan sekaligus keluar dari kode editor
 
+:w name_file.txt = membuat file dengan nama
+     
+atau juga membuat file didalam folder
+   
+:w ./folder1/folder2/name-file.txt
+ 
+untuk membuat file didalam folder yang sama
+
+:w %:h/name-file.txt
+
+:Ex (explore)=kemudian ketik tombol "d". Dan beri nama folder
+
+gg = memindahkan kursor ke awal kode
+
+GG = memindahkan kursor ke akhir kode
+
+dd = menghapus kode 1 line pada posisi kursor berada
+
+4k = memindahkan kursor ke 4 baris keatas. kursor akan dipindahkan ke baris sesuai nomor
+
+d4k = menghapus kode 4 baris dari kursor
+
+{ = memindahkan kursor ke kurung kurawal atas, begitupun sebaliknya
 
 ```
-
 ## Copy paste code
 
 ```
@@ -103,7 +125,7 @@ ctrl+j = untuk pindah kursor kebawah
 ctrl+h = untuk pindah kursor ke arah kiri
 
 ctrl+l = untuk pindah kursor ke kanan
-```
+````
 
 ## Membuka terminal
 
@@ -111,6 +133,17 @@ ctrl+l = untuk pindah kursor ke kanan
 Mode Normal / INSERT 
 
 ctrl+t
+```
+
+## Multi Cursor
+
+```
+Mode Normal
+
+ctrl+arrow down  atau ctrl+arrow up
+
+untuk keluar dari multi kursor tekan Q(shift+q)
+
 ```
 
 ## Mengubah lebar dan tinggi screen
@@ -126,7 +159,11 @@ ctrl+arrow < > ^
 
 misal : ctrl+ arrow keatas = digunakkan untuk mengatur ketinggian screen
 ```
+## Mengaktifkan nerdtree
 
+```
+ctrl+z
+```
 
 
 
