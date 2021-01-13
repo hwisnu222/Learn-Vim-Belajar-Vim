@@ -1,4 +1,4 @@
-# Belajar VIM
+# Learn Vim || Belajar VIM
 
 ## Mode dalam vim
 
@@ -40,6 +40,33 @@ paste = p
 untuk mempaste dibawah kode mengukan p(kecil). untuk sebelum kode menggunakan P(besar)
 ```
 
+## Copy paste dari system ke vim atau sebaliknya
+
+untuk melakukan perintah dibawah terlebih dahulu daftarkan ke register dulu.
+
+copy paste kode dibawah ke init.vim
+
+```
+set termencoding=utf-8
+
+set encoding=utf-8
+```
+
+```
+Mode normal
+
+Copy dari vim ke system
+
+"+y (tanda plusnya juga ikut ditekan)
+
+untuk mempastenya menggunakkan seperti bisasanya yaitu dengan ctrl+v
+
+cara paste dari system ke vim
+
+"+p (tanda plusnya juga ikut ditekan)
+
+```
+
 ## Split
 
 split secara vertical
@@ -49,7 +76,15 @@ Mode normal
 
 ketikan perintah dibawah
 
+untuk split secara vertical
+
 :vsp
+
+untuk split secara horizontal
+
+:sp
+
+
 ```
 
 ## Pindah antar screen split
@@ -58,6 +93,16 @@ ketikan perintah dibawah
 Mode Normal
 
 ctrl+ww
+
+atau bisa juga menggunakkan dibawah ini
+
+ctrl+k = untuk pindah kursor keatas
+
+ctrl+j = untuk pindah kursor kebawah
+
+ctrl+h = untuk pindah kursor ke arah kiri
+
+ctrl+l = untuk pindah kursor ke kanan
 ```
 
 ## Membuka terminal
@@ -81,3 +126,4 @@ ctrl+arrow < > ^
 
 misal : ctrl+ arrow keatas = digunakkan untuk mengatur ketinggian screen
 ```
+

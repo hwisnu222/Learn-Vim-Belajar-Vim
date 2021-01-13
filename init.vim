@@ -111,7 +111,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 autocmd CursorHold,CursorHoldI * call NERDTreeFocus() | call g:NERDTree.ForCurrentTab().getRoot().refresh() | call g:NERDTree.ForCurrentTab().render() | wincmd w
 
 
-" split map
+" split map for set width and height screen
 noremap <silent> <C-Left> :vertical resize +3<CR>
 noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :resize +3<CR>
@@ -146,7 +146,7 @@ function! OpenTerminal()
 endfunction
 nnoremap <c-t> :call OpenTerminal()<CR>
 
-" paste from system
+"register for paste from system to vim
 set termencoding=utf-8
 set encoding=utf-8
 
