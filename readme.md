@@ -19,6 +19,8 @@ dan setiap perintah menggunakan tanda titik sama dengan pada awal perintah
   
 :q! = digunakkan untuk keluar dari kode editor tanpa menyimpan perubahan pada file
    
+:qall = keluar semua screen
+
 :w = untuk menyimpan perubahan file
    
 :wq untuk menyimpan perubahan sekaligus keluar dari kode editor
@@ -102,11 +104,16 @@ untuk split secara vertical
 
 :vsp
 
+
 untuk split secara horizontal
 
 :sp
 
+perintah diatas dapat dikombinasikan dengan nama file
 
+contoh:
+
+:vsp ./folder/nama-file.txt (maka akan split screen secara vertikal dengan isi nama-file.txt)
 ```
 
 ## Pindah antar screen split
@@ -118,13 +125,13 @@ ctrl+ww
 
 atau bisa juga menggunakkan dibawah ini
 
-ctrl+k = untuk pindah kursor keatas
+ctrl+k = untuk pindah kursor ke screen atas
 
-ctrl+j = untuk pindah kursor kebawah
+ctrl+j = untuk pindah kursor ke screen bawah
 
-ctrl+h = untuk pindah kursor ke arah kiri
+ctrl+h = untuk pindah kursor ke screen kiri
 
-ctrl+l = untuk pindah kursor ke kanan
+ctrl+l = untuk pindah kursor ke screen kanan
 ````
 
 ## Membuka terminal
@@ -144,6 +151,7 @@ ctrl+arrow down  atau ctrl+arrow up
 
 untuk keluar dari multi kursor tekan Q(shift+q)
 
+atau tekan esc sampai ada alert dibawah
 ```
 
 ## Mengubah lebar dan tinggi screen
@@ -158,13 +166,27 @@ kemudian tekan
 ctrl+arrow < > ^ 
 
 misal : ctrl+ arrow keatas = digunakkan untuk mengatur ketinggian screen
+
+atau bisa juga dengan menggunakkan command dibawah
+
+:resize -5 (maka screen akan dikurangi sesuai ukuran tersebut)
+
+:resize +5 (screen akan ditambah dengan ukuran tersebut)
 ```
 ## Mengaktifkan nerdtree
 
 ```
 ctrl+z
 ```
+## Mencari file dengan plugin fzf
 
+sebelum menggunakkan command dibawah, install terlebih dahulu plugin fzf
+
+```
+ctrl+p
+
+kemudian ketikan nama file yang ingin dicari
+```
 
 
 ❤ happy day

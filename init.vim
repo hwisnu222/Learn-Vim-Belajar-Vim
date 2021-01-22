@@ -56,7 +56,6 @@ set noswapfile
 set nowrap
 
 
-
 " seraching file
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
